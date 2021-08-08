@@ -74,7 +74,7 @@ while True:
     elif AllyRequest.status_code == 429:
         print('429 - Waiting 150 seconds')
         time.sleep(150)
-    elif AllyRequest.status_code == 401:
+    elif AllyRequest.status_code == 403:
         NewBot.TOKEN = OBTAIN_TOKEN()
 
     time.sleep(3)
